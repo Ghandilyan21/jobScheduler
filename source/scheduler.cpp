@@ -80,7 +80,6 @@ void Scheduler::stop()
     {
         schedulerThread.join();
     }
-    // std::cout << "\nScheduler thread finishes\n";
 }
 
 void Scheduler::singleStep()
@@ -129,5 +128,4 @@ Scheduler::~Scheduler()
     {
         schedulerThread.join();
     }
-    // std::cout << "\nScheduler thread finishes\n";
 }

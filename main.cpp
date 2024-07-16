@@ -3,11 +3,10 @@
 #include <thread>
 #include "source/scheduler.hpp"
 #include "source/job.hpp"
-Scheduler scheduler;
 
 void basicFunctionalityTest()
 {
-
+    Scheduler scheduler;
     // Task definitions
     auto taskA = []()
     { std::cout << "Task A executed\n"; };
@@ -17,7 +16,6 @@ void basicFunctionalityTest()
     { std::cout << "Task C executed\n"; };
     auto taskD = []()
     { std::cout << "Task D executed\n"; };
-    
 
     // Adding jobs
     Job jobA("Job A", 10, std::chrono::seconds(1), taskA);
@@ -136,16 +134,11 @@ int main()
 
     std::cout << "All tests passed!\n";
 
-
     auto taskE = []()
     { std::cout << "Task E executed\n"; };
-    Job *jobE = new Job("Job E", 15, std::chrono::seconds(5), taskE, true, std::chrono::seconds(3));
-    
-    // Job jobE("Job E", 10, std::chrono::seconds(0), taskE);
-    
-    scheduler.addJob(jobE);
-    scheduler.print();
-    scheduler.start();
+
+
+    //changing all
 
     return 0;
 }

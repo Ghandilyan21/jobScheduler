@@ -1,6 +1,5 @@
 #ifndef SCHEDULER_HPP
 #define SCHEDULER_HPP
-
 #include <iostream>
 #include <string>
 #include "../interfaces/job_interface.hpp"

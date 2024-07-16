@@ -35,8 +35,6 @@ Job::Job(const Job &other)
 {
 }
 
-// Job::~Job() = default;
-
 std::string Job::getName() const
 {
     return name;
@@ -56,10 +54,6 @@ const std::chrono::system_clock::time_point &Job::getScheduledTime() const
 {
     return scheduledTime;
 }
-// std::chrono::system_clock::time_point &Job::getScheduledTime()
-// {
-//     return scheduledTime;
-// }
 
 std::function<void()> Job::getTask() const
 {

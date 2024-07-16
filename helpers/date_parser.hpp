@@ -11,7 +11,6 @@ class DateParser
 public:
     DateParser(std::string data) : date{data} {}
     std::chrono::system_clock::time_point parseDate() const;
-
 private:
     std::string date;
 };

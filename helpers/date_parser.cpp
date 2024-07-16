@@ -9,7 +9,6 @@ std::chrono::system_clock::time_point DateParser::parseDate() const
     {
         throw std::invalid_argument("Failed to parse date and time");
     }
-
     std::time_t time = std::mktime(&tm);
     return std::chrono::system_clock::from_time_t(time);
 }
