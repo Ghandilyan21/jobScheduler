@@ -137,8 +137,5 @@ int main()
     auto taskE = []()
     { std::cout << "Task E executed\n"; };
 
-
-    //changing all
-
     return 0;
 }
